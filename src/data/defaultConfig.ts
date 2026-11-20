@@ -2,17 +2,23 @@ import type { BirthdayConfig } from '../types/birthday';
 
 export const DEFAULT_LETTER = `Happy birthday, my love.
 
-I wish I could be there today. I wish I could see your smile, annoy you in person, hold your hand and make this day feel a little more special.
+Happy birthday madam jii... ❤️
 
-But even with all this distance between us, there's one thing distance has never managed to change — the way I feel about you.
+Sach bolu toh mujhe samajh hi nahi aa raha ki aaj kya likhu aur kaise likhu, kyunki jo feel karta hu na tere liye, woh words mein explain karna thoda mushkil hai. Aur aaj sabse zyada bura is baat ka lag raha hai ki main tere saath nahi hu. Kaash aaj tere paas hota, tujhe hug karta, tere saath time spend karta, tujhe pareshan karta, tere saath hasta aur bas tere paas rehta.
 
-You have become a part of my everyday life in ways I can't even explain. The little conversations, your random moods, your laughter, the way you tell me things, even the moments when we don't have anything to say.
+Pata hai, tu meri life mein kab aayi aur kab itni important ho gayi, mujhe khud pata nahi chala. But ab meri life ke bohot saare chhote chhote parts mein tu hai. Din mein kuch achha ho toh tujhe batana, kuch bura ho toh tere paas aana, random baatein karna, tera mood, teri bakbak, tere nakhre, tujhe manana, tere saath faltu ki baaton pe hasna. I genuinely love all of it. Even the moments jab hum kuch baat nahi kar rahe hote, tab bhi tere saath rehna achha lagta hai.
 
-I hope this new year of your life brings you the kind of happiness you deserve. I hope you achieve everything you dream about. And whenever life gets difficult, I hope you remember that somewhere, there's someone who believes in you, chooses you, and loves you more than he knows how to express.
+Tu shayad khud nahi jaanti ki mere liye kitni special hai. Aur main shayad har baar tujhe sahi se bata bhi nahi pata. But I hope tu kabhi khud ko less samjhe toh meri nazar se khud ko dekhna. Tu bohot precious hai, aur tu jitni khushi, pyaar aur achhi cheezein deserve karti hai na, I hope tujhe life mein woh sab mile. Tere saare dreams poore ho, tu apni life mein bohot aage jaaye, khush rahe, aur tere chehre pe ye smile hamesha rahe.
 
-I can't be there to celebrate with you today, but if love could travel, mine would already be sitting right next to you.
+Aur haan, mujhe pata hai main kabhi kabhi irritate karta hu, faltu mein tang karta hu, stupid baatein karta hu, but trust me, I wouldn't trade all of that for anything. Tu meri favourite person hai, even when you're being annoying (which is quite often 😂).
 
-Happy birthday. I love you.`;
+Aaj main tere paas nahi hu, aur ye thoda unfair hai, but distance doesn't change how much you mean to me. Agar teleport hona possible hota na, toh abhi tak main tere paas pahunch chuka hota.
+
+I hope tera aaj ka din bohot achha jaaye, tu bohot hase, bohot khush rahe aur tujhe feel ho ki tu kitni loved hai.
+
+Happy birthday, baby. ❤️ Thank you for being you, for being in my life, and for making so many ordinary days feel special.
+
+I love you. And I really, really wish I was there with you today.`;
 
 export const DEFAULT_BIRTHDAY_CONFIG: BirthdayConfig = {
   recipientName: 'baby',
