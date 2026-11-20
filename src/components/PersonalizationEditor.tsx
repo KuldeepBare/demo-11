@@ -393,7 +393,7 @@ export function PersonalizationEditor({
                     <div className="flex items-center justify-between">
                       <span className="text-sm font-medium text-[#4E382E] flex items-center gap-2">
                         <Music className="w-4 h-4 text-[#C95B63]" />
-                        Your Voice Recording (MP3 / M4A)
+                        Your Voice Recording (MP3 / M4A / MP4)
                       </span>
                       {config.audioDataUrl && (
                         <button
@@ -414,18 +414,27 @@ export function PersonalizationEditor({
                         {config.audioFileName && (
                           <p className="text-xs text-[#715447] truncate">{config.audioFileName}</p>
                         )}
-                        <audio controls src={config.audioDataUrl} className="w-full h-10" />
+                          <audio controls className="w-full h-10">
+                            <source
+                              src={config.audioDataUrl}
+                              type={
+                                config.audioFileName?.toLowerCase().endsWith('.mp4')
+                                  ? 'audio/mp4'
+                                  : undefined
+                              }
+                            />
+                          </audio>
                       </div>
                     ) : (
                       <div className="rounded-xl border border-dashed border-[#715447]/25 py-5 px-4 text-center text-xs text-[#715447]/75">
-                        Upload an MP3 or M4A recording of your voice so she can listen to you directly.
+                        Upload an MP3, M4A, or audio-only MP4 recording of your voice so she can listen to you directly.
                       </div>
                     )}
 
                     <input
                       ref={audioInputRef}
                       type="file"
-                      accept="audio/*,.mp3,.m4a,.wav,.ogg"
+                      accept="audio/*,.mp3,.m4a,.mp4,.wav,.ogg"
                       onChange={handleAudioUpload}
                       className="hidden"
                     />

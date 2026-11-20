@@ -40,8 +40,8 @@ export const DEFAULT_BIRTHDAY_CONFIG: BirthdayConfig = {
   letterBody: DEFAULT_LETTER,
   voiceHeading: "There's something I wanted you to hear.",
   voiceSubtitle: 'Not in a text. In my own voice.',
-  audioDataUrl: null,
-  audioFileName: null,
+  audioDataUrl: '/assets/aaa.m4a.mp3',
+  audioFileName: 'aaa.mp4',
   giftsHeading: 'I kept a few little things for you.',
   giftMessages: [
     'I hope you never forget how special you are to me.',

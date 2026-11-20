@@ -27,6 +27,9 @@ export function SceneFiveVoice({
 }: SceneFiveVoiceProps) {
   const prefersReducedMotion = useReducedMotion();
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioMimeType = audioFileName?.toLowerCase().endsWith('.mp4')
+    ? 'audio/mp4'
+    : undefined;
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -139,7 +142,6 @@ export function SceneFiveVoice({
             <div className="relative z-10">
               <audio
                 ref={audioRef}
-                src={audioDataUrl}
                 preload="metadata"
                 onLoadedMetadata={(e) => setDuration(e.currentTarget.duration)}
                 onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime)}
@@ -149,7 +151,9 @@ export function SceneFiveVoice({
                 onError={() =>
                   setAudioError('This audio format could not be played. Try uploading an MP3 or M4A file.')
                 }
-              />
+              >
+                <source src={audioDataUrl} type={audioMimeType} />
+              </audio>
 
               {/* Animated Waveform */}
               <div
