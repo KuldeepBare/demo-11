@@ -1,0 +1,6 @@
+{
+  "name": "A Tiny Little World For You",
+  "description": "A romantic, interactive storybook birthday surprise made with love.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
